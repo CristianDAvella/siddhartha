@@ -10,7 +10,7 @@ fun SiddharthaTheme(content: @Composable () -> Unit) {
         primary = Color(0xFF9520d4),
         secondary = Color(0xFF20d495),
         tertiary = Color(0xFFd49520),
-        background = Color(0xFFFFFFFF),
+        background = Color(0xFF9520d4),
         surface = Color(0xFFFFFFFF),
         onPrimary = Color.White,
         onSecondary = Color.Black,
