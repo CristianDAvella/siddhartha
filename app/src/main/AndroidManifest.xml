@@ -23,6 +23,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".view.PrincipalActivity" />
+        <activity android:name=".view.Activity_tecnicas" />
     </application>
 
 </manifest>
