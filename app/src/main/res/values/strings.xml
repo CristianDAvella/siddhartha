@@ -4,4 +4,20 @@
     <string name="password">Contraseña</string>
     <string name="login">Iniciar sesión</string>
     <string name="register">Registrarse</string>
+    <string name="home_title">Bienvenido a Siddhartha</string>
+    <string name="home_description">Esta aplicación te guiará a través de técnicas de meditación para mejorar tu bienestar.</string>
+    <string name="home_benefits">La meditación ayuda a reducir el estrés, mejorar el enfoque y fomentar la paz interior.</string>
+    <string name="home_history">Inspirada en prácticas ancestrales, Siddhartha honra la sabiduría milenaria adaptada al mundo moderno.</string>
+    <string name="section_title_intro">Presentación</string>
+    <string name="section_text_intro">Siddhartha es una guía de meditación moderna. La aplicación fue diseñada para proporcionar a los usuarios una experiencia práctica y enriquecedora centrada en la atención plena, relajación y autoconocimiento. A través de sesiones guiadas y técnicas tradicionales, Siddhartha ofrece un espacio personal donde puedes desarrollar una práctica diaria consciente y profunda.</string>
+
+    <string name="section_title_history">Historia</string>
+    <string name="section_text_history">El nombre Siddhartha proviene de Siddhartha Gautama, conocido como Buda, quien alcanzó la iluminación mediante la meditación. Inspirada en estas enseñanzas milenarias, esta app adapta esos principios a la vida contemporánea. Así, honramos esa sabiduría integrándola con tecnologías actuales.</string>
+
+    <string name="section_title_purpose">Propósito</string>
+    <string name="section_text_purpose">El propósito de Siddhartha es fomentar el equilibrio emocional, mental y espiritual. La app busca ofrecer un camino accesible para todos aquellos interesados en mejorar su bienestar, reducir el estrés o simplemente conectar consigo mismos desde la comodidad de su dispositivo móvil.</string>
+
+    <string name="section_title_benefits">Beneficios</string>
+    <string name="section_text_benefits">Meditar con Siddhartha te permitirá reducir la ansiedad, mejorar la concentración, fomentar la empatía y mejorar la calidad del sueño. Está respaldada por estudios científicos y diseñada para ayudarte sin importar tu nivel de experiencia, desde principiantes hasta meditadores avanzados.</string>
+
 </resources>
