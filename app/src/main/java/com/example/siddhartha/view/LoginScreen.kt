@@ -32,6 +32,7 @@ fun LoginScreen(viewModel: AuthViewModel) {
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var showForm by remember { mutableStateOf(false) }
+    val context = LocalContext.current
 
     LaunchedEffect(Unit) { showForm = true }
 
@@ -88,7 +89,9 @@ fun LoginScreen(viewModel: AuthViewModel) {
                 )
                 Spacer(modifier = Modifier.height(24.dp))
                 Button(
-                    onClick = { viewModel.login(email, password) },
+                    onClick = { viewModel.login(email, password)
+                    val intent = Intent(context, PrincipalActivity::class.java)
+                        context.startActivity(intent)},
                     colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary),
                     modifier = Modifier
                         .fillMaxWidth()
