@@ -23,6 +23,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.siddhartha.viewmodel.AuthViewModel
 import com.example.siddhartha.R
+import android.content.Intent
+import androidx.compose.ui.platform.LocalContext
+
 
 @Composable
 fun LoginScreen(viewModel: AuthViewModel) {
