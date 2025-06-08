@@ -87,8 +87,9 @@ fun LoginScreen(viewModel: AuthViewModel) {
                     shape = RoundedCornerShape(12.dp)
                 )
                 Spacer(modifier = Modifier.height(24.dp))
+                val context = LocalContext.current
                 Button(
-                    onClick = { viewModel.login(email, password) },
+                    onClick = { context.startActivity(Intent(context, PrincipalActivity::class.java)) },
                     colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary),
                     modifier = Modifier
                         .fillMaxWidth()
