@@ -111,13 +111,7 @@ fun LoginScreen() {
                 Spacer(modifier = Modifier.height(12.dp))
                 TextButton(
                     onClick = {
-                        viewModel.register(email, password) { success, message ->
-                            if (success) {
-                                Toast.makeText(context, "Registro exitoso", Toast.LENGTH_SHORT).show()
-                            } else {
-                                Toast.makeText(context, message ?: "Error", Toast.LENGTH_LONG).show()
-                            }
-                        }
+                        context.startActivity(Intent(context, RegisterActivity::class.java))
                     },
                     colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.secondary)
                 ) {

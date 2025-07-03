@@ -34,6 +34,7 @@
         </activity>
         <activity android:name=".view.PrincipalActivity" />
         <activity android:name=".view.Activity_tecnicas" />
+        <activity android:name=".view.RegisterActivity" />
 
         <!-- Receiver para reinicio del dispositivo -->
         <receiver android:name=".receiver.AlarmaReceiver"

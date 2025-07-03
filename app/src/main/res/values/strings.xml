@@ -35,4 +35,10 @@
     <string name="play">Reproducir</string>
     <string name="close">Cerrar</string>
 
+    <!--RegisterScreen-->
+    <string name="complete_data">Complete los Datos</string>
+    <string name="confirm_password">Confirmar Contraseña</string>
+    <string name="register_success">Usuario registrado con éxito</string>
+    <string name="error">Error</string>
+    <string name="password_mismatch">Las contraseñas no coinciden</string>
 </resources>
