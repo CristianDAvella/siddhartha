@@ -19,7 +19,7 @@ fun BottomNavigationBar(currentActivity: String, context: Context) {
         containerColor = MaterialTheme.colorScheme.tertiary,
         tonalElevation = 8.dp
     ) {
-        NavigationBarItem(
+        /*NavigationBarItem(
             icon = { Icon(Icons.Default.Info, contentDescription = "About") },
             label = { Text("About") },
             selected = currentActivity == "AboutActivity",
@@ -33,7 +33,7 @@ fun BottomNavigationBar(currentActivity: String, context: Context) {
                 selectedTextColor = Color.Black,
                 indicatorColor = MaterialTheme.colorScheme.surface
             )
-        )
+        )*/
 
         NavigationBarItem(
             icon = { Icon(Icons.Default.Star, contentDescription = "Técnicas") },

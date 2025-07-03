@@ -38,4 +38,11 @@
     <string name="pause">Pause</string>
     <string name="play">Play</string>
     <string name="close">Close</string>
+
+    <!--RegisterScreen-->
+    <string name="complete_data">Complete the Data</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="register_success">User registered successfully</string>
+    <string name="error">Error</string>
+    <string name="password_mismatch">Passwords do not match</string>
 </resources>
