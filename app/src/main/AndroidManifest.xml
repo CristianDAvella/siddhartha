@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.siddhartha">
+
+    <!-- Permisos necesarios -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -13,18 +18,34 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Siddhartha"
         tools:targetApi="31">
+
+        <!-- Si necesitas compatibilidad con bibliotecas antiguas -->
+        <uses-library android:name="org.apache.http.legacy" android:required="false" />
+
+        <!-- Actividades -->
         <activity
             android:name=".view.MainActivity"
             android:exported="true"
             android:theme="@style/Theme.Siddhartha">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".view.PrincipalActivity" />
         <activity android:name=".view.Activity_tecnicas" />
+
+        <!-- Receiver para reinicio del dispositivo -->
+        <receiver android:name=".receiver.AlarmaReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.example.siddhartha.ALARMA_DIARIA" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+
     </application>
 
 </manifest>

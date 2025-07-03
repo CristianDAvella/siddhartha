@@ -19,5 +19,20 @@
 
     <string name="section_title_benefits">Beneficios</string>
     <string name="section_text_benefits">Meditar con Siddhartha te permitirá reducir la ansiedad, mejorar la concentración, fomentar la empatía y mejorar la calidad del sueño. Está respaldada por estudios científicos y diseñada para ayudarte sin importar tu nivel de experiencia, desde principiantes hasta meditadores avanzados.</string>
+    <string name="relaxation_techniques">Técnicas de Relajación</string>
+    <string name="deep_breathing">Respiración profunda</string>
+    <string name="muscle_relaxation">Relajación muscular</string>
+    <string name="guided_visualization">Visualización guiada</string>
+
+    <string name="desc_deep_breathing">Inhala profundamente por la nariz y exhala lentamente...</string>
+    <string name="desc_muscle_relaxation">Relaja cada grupo muscular progresivamente...</string>
+    <string name="desc_guided_visualization">Imagina un lugar tranquilo y seguro...</string>
+
+    <string name="playing_audio">🔊 Reproduciendo audio...</string>
+
+    <string name="restart">Reiniciar</string>
+    <string name="pause">Pausar</string>
+    <string name="play">Reproducir</string>
+    <string name="close">Cerrar</string>
 
 </resources>
