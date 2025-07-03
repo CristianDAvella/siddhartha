@@ -1,0 +1,41 @@
+
+<resources>
+    <string name="app_name">Siddhartha</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Log In</string>
+    <string name="register">Register</string>
+
+    <string name="home_title">Welcome to Siddhartha</string>
+    <string name="home_description">This app will guide you through meditation techniques to improve your well-being.</string>
+    <string name="home_benefits">Meditation helps reduce stress, improve focus, and foster inner peace.</string>
+    <string name="home_history">Inspired by ancient practices, Siddhartha honors timeless wisdom adapted to the modern world.</string>
+
+    <string name="section_title_intro">Introduction</string>
+    <string name="section_text_intro">Siddhartha is a modern meditation guide. The app was designed to provide users with a practical and enriching experience focused on mindfulness, relaxation, and self-awareness. Through guided sessions and traditional techniques, Siddhartha offers a personal space to develop a deep and conscious daily practice.</string>
+
+    <string name="section_title_history">History</string>
+    <string name="section_text_history">The name Siddhartha comes from Siddhartha Gautama, known as Buddha, who achieved enlightenment through meditation. Inspired by these ancient teachings, this app adapts those principles to contemporary life. Thus, we honor that wisdom by integrating it with modern technologies.</string>
+
+    <string name="section_title_purpose">Purpose</string>
+    <string name="section_text_purpose">Siddhartha’s purpose is to promote emotional, mental, and spiritual balance. The app aims to provide an accessible path for those interested in improving their well-being, reducing stress, or simply connecting with themselves from the comfort of their mobile device.</string>
+
+    <string name="section_title_benefits">Benefits</string>
+    <string name="section_text_benefits">Meditating with Siddhartha will help reduce anxiety, improve focus, increase empathy, and enhance sleep quality. It is backed by scientific studies and designed to help you regardless of your experience level—from beginners to advanced meditators.</string>
+
+    <string name="relaxation_techniques">Relaxation Techniques</string>
+    <string name="deep_breathing">Deep Breathing</string>
+    <string name="muscle_relaxation">Muscle Relaxation</string>
+    <string name="guided_visualization">Guided Visualization</string>
+
+    <string name="desc_deep_breathing">Inhale deeply through your nose and exhale slowly...</string>
+    <string name="desc_muscle_relaxation">Relax each muscle group progressively...</string>
+    <string name="desc_guided_visualization">Imagine a calm and safe place...</string>
+
+    <string name="playing_audio">🔊 Playing audio...</string>
+
+    <string name="restart">Restart</string>
+    <string name="pause">Pause</string>
+    <string name="play">Play</string>
+    <string name="close">Close</string>
+</resources>

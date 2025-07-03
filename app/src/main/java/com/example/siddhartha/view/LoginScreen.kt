@@ -1,5 +1,7 @@
 package com.example.siddhartha.view
 
+import android.content.Intent
+import android.widget.Toast
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.animation.fadeIn
 import androidx.compose.animation.fadeOut
@@ -11,27 +13,26 @@ import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.graphics.Brush
-import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.input.PasswordVisualTransformation
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
-import com.example.siddhartha.viewmodel.AuthViewModel
+import androidx.lifecycle.viewmodel.compose.viewModel
 import com.example.siddhartha.R
-import android.content.Intent
-import androidx.compose.ui.platform.LocalContext
-
+import com.example.siddhartha.viewmodel.AuthViewModel
 
 @Composable
-fun LoginScreen(viewModel: AuthViewModel) {
+fun LoginScreen() {
+    val viewModel: AuthViewModel = viewModel()
     var email by remember { mutableStateOf("") }
     var password by remember { mutableStateOf("") }
     var showForm by remember { mutableStateOf(false) }
+    val context = LocalContext.current
 
     LaunchedEffect(Unit) { showForm = true }
 
@@ -75,7 +76,8 @@ fun LoginScreen(viewModel: AuthViewModel) {
                     onValueChange = { email = it },
                     label = { Text(stringResource(R.string.email)) },
                     modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(12.dp)
+                    shape = RoundedCornerShape(12.dp),
+                    singleLine = true
                 )
                 Spacer(modifier = Modifier.height(16.dp))
                 OutlinedTextField(
@@ -84,12 +86,20 @@ fun LoginScreen(viewModel: AuthViewModel) {
                     label = { Text(stringResource(R.string.password)) },
                     visualTransformation = PasswordVisualTransformation(),
                     modifier = Modifier.fillMaxWidth(),
-                    shape = RoundedCornerShape(12.dp)
+                    shape = RoundedCornerShape(12.dp),
+                    singleLine = true
                 )
                 Spacer(modifier = Modifier.height(24.dp))
-                val context = LocalContext.current
                 Button(
-                    onClick = { context.startActivity(Intent(context, PrincipalActivity::class.java)) },
+                    onClick = {
+                        viewModel.login(email, password) { success, message ->
+                            if (success) {
+                                context.startActivity(Intent(context, PrincipalActivity::class.java))
+                            } else {
+                                Toast.makeText(context, message ?: "Error", Toast.LENGTH_LONG).show()
+                            }
+                        }
+                    },
                     colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiary),
                     modifier = Modifier
                         .fillMaxWidth()
@@ -100,7 +110,15 @@ fun LoginScreen(viewModel: AuthViewModel) {
                 }
                 Spacer(modifier = Modifier.height(12.dp))
                 TextButton(
-                    onClick = { viewModel.register(email, password) },
+                    onClick = {
+                        viewModel.register(email, password) { success, message ->
+                            if (success) {
+                                Toast.makeText(context, "Registro exitoso", Toast.LENGTH_SHORT).show()
+                            } else {
+                                Toast.makeText(context, message ?: "Error", Toast.LENGTH_LONG).show()
+                            }
+                        }
+                    },
                     colors = ButtonDefaults.textButtonColors(contentColor = MaterialTheme.colorScheme.secondary)
                 ) {
                     Text(text = stringResource(R.string.register), fontSize = 14.sp)

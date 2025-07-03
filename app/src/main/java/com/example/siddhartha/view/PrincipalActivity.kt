@@ -27,7 +27,7 @@ class PrincipalActivity : ComponentActivity() {
             SiddharthaTheme {
                 Scaffold(
                     bottomBar = {
-                        BottomNavigationBar("MainActivity", this)
+                         BottomNavigationBar("MainActivity", this)
                     }
                 ) { innerPadding ->
                     Surface(
