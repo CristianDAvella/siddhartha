@@ -37,7 +37,7 @@ fun BottomNavigationBar(currentActivity: String, context: Context) {
 
         NavigationBarItem(
             icon = { Icon(Icons.Default.Star, contentDescription = "Técnicas") },
-            label = { Text("Técnicas") },
+            label = { Text("") },
             selected = currentActivity == "SecondActivity",
             onClick = {
                 if (currentActivity != "SecondActivity") {
@@ -53,7 +53,7 @@ fun BottomNavigationBar(currentActivity: String, context: Context) {
 
         NavigationBarItem(
             icon = { Icon(Icons.Default.Home, contentDescription = "Home") },
-            label = { Text("Inicio") },
+            label = { Text("") },
             selected = currentActivity == "MainActivity",
             onClick = {
                 if (currentActivity != "MainActivity") {
